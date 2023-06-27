@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css"
+    />
+    <title>Wedding Invitation</title>
+    <link rel="icon" type="image/png" href="favicon/icons8-wedding-50.png" />
+  </head>
+  <body>
+    <header>
+      <div class="header-image"></div>
+    </header>
+
+    <section class="image-text">
+      <div class="container">
+        <h1>Welcome to My Website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </section>
+
+    <section class="image-form">
+      <div class="container">
+        <form
+          id="myForm"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbxOpM-GjTexLBapjTb3flSRsZrm5lrahge-4b0o6V414R1Oe7GMzqgjqX2Igx188dHT/exec"
+        >
+          <h2>?האם הינך מגיע/ה</h2>
+          <div class="inline-buttons">
+            <button
+              type="button"
+              name="Do You Come"
+              class="one-third button"
+              data-value="no"
+            >
+              לא מגיע
+            </button>
+            <button
+              type="button"
+              name="Do You Come"
+              class="one-third button"
+              data-value="maybe"
+            >
+              אולי
+            </button>
+            <button
+              type="button"
+              name="Do You Come"
+              class="one-third first button"
+              data-value="yes"
+            >
+              מגיע
+            </button>
+          </div>
+          <input
+            type="text"
+            name="Name"
+            class="right-align"
+            placeholder=":שם מלא"
+            dir="rtl"
+            required
+          />
+          <input
+            type="tel"
+            name="Phone Number"
+            class="right-align"
+            placeholder=":נייד"
+            dir="rtl"
+            required
+          />
+          <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+          <div class="invitation-amount"><h4>?כמות מוזמנים</h4></div>
+          <div class="input-group plus-minus-input">
+            <div class="input-group-button">
+              <button
+                type="button"
+                class="button hollow circle"
+                data-quantity="minus"
+                data-field="Amount Invited"
+              >
+                <i class="fa fa-minus" aria-hidden="true">-</i>
+              </button>
+            </div>
+            <input
+              class="input-group-field"
+              type="number"
+              name="Amount Invited"
+              value="1"
+            />
+            <div class="input-group-button">
+              <button
+                type="button"
+                class="button hollow circle"
+                data-quantity="plus"
+                data-field="Amount Invited"
+              >
+                <i class="fa fa-plus" aria-hidden="true">+</i>
+              </button>
+            </div>
+          </div>
+
+          <button id="submitButton" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Example</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form
+      method="POST"
+      action="https://script.google.com/macros/s/AKfycbxOpM-GjTexLBapjTb3flSRsZrm5lrahge-4b0o6V414R1Oe7GMzqgjqX2Igx188dHT/exec"
+    >
+      <div class="inline-buttons">
+        <p>
+          <button class="one-third first button">Buy Now</button
+          ><button class="one-third button">Buy Now</button
+          ><button class="one-third button">Buy Now</button>
+        </p>
+      </div>
+
+      <!--  -->
+      <input name="Name" type="text" placeholder="Name" required />
+      <input
+        name="Phone Number"
+        type="tel"
+        placeholder="Your number"
+        required
+      />
+      <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+      <div class="input-group plus-minus-input">
+        <div class="input-group-button">
+          <button
+            type="button"
+            class="button hollow circle"
+            data-quantity="minus"
+            data-field="quantity"
+          >
+            <i class="fa fa-minus" aria-hidden="true"></i>
+          </button>
+        </div>
+        <input
+          class="input-group-field"
+          type="number"
+          name="quantity"
+          value="1"
+        />
+        <div class="input-group-button">
+          <button
+            type="button"
+            class="button hollow circle"
+            data-quantity="plus"
+            data-field="quantity"
+          >
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>

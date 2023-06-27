@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="UTF-8"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alef:wght@400&family=Alice&family=Open+Sans:wght@500&family=Dancing+Script:wght@700&family=Herr+Von+Muellerhoff&family=Kaushan+Script&family=Lato:wght@900&family=Suez+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <title>Wedding Invitation</title>
+    <link rel="icon" type="image/png" href="favicon/icons8-wedding-50.png" />
+  </head>
+  <body>
+    <div class="block block-1"></div>
+    <div class="block block-2">
+      <div class="text"></div>
+      <div class="additional-text">
+        <p class="her_von big-text">Save the Date</p>
+        <p class="alice task-line">REFAEL & LINOY</p>
+        <p class="alice task-line">ARE GETTING MARRIED</p>
+        <hr class="hr" />
+        <p class="lato opening">
+          אנו שמחים להזמין אתכם לחגוג עמנו את יום נישואינו
+        </p>
+        <p class="script task-line day">יום רביעי</p>
+        <p class="script task-line date">01 - 08 - 2020</p>
+        <p class="alef task-line ulam">אולמי בראשית</p>
+        <p class="suez place">קהילת ציון 22, עפולה</p>
+        <div class="parent parent-top">
+          <p class="time time1 child">18:00</p>
+          <p class="lato task-line child receiving">קבלת פנים</p>
+        </div>
+        <div class="parent">
+          <p class="time time2 child">19:30</p>
+          <p class="lato task-line receiving child receiving2">חופה וקידושין</p>
+        </div>
+        <div class="parent">
+          <p class="suez parents2 child">
+            הורי החתן <br />
+            חנה ואשר ביטון
+          </p>
+          <p class="suez parents1 child">
+            הורי הכלה <br />
+            דפנה ויעקב דוד
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="image-form">
+      <div class="container">
+        <form
+          id="myForm"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbxOpM-GjTexLBapjTb3flSRsZrm5lrahge-4b0o6V414R1Oe7GMzqgjqX2Igx188dHT/exec"
+        >
+          <h2>?האם הינך מגיע/ה</h2>
+          <div>
+            <div class="inline-buttons">
+              <button
+                type="button"
+                name="Do You Come"
+                class="one-third button-39 button-39-first"
+                data-value="no"
+              >
+                <span>לא מגיע</span><i></i>
+              </button>
+              <button
+                type="button"
+                name="Do You Come"
+                class="one-third button-39 button-39-first"
+                data-value="maybe"
+              >
+                <span>אולי</span><i></i>
+              </button>
+              <button
+                type="button"
+                name="Do You Come"
+                class="one-third first button-39 button-39-first"
+                data-value="yes"
+              >
+                <span>מגיע</span><i></i>
+              </button>
+            </div>
+          </div>
+          <div class="name-phone">
+            <div class="parent1">
+              <input
+                type="text"
+                name="Name"
+                class="right-align input child1 inputs-radius"
+                placeholder="שם מלא"
+                dir="rtl"
+                required
+              />
+
+              <a class="input side-icons"
+                ><i class="fa-solid fa-user child1" style="color: #c7c7c7"></i
+              ></a>
+            </div>
+            <br />
+            <div class="parent1">
+              <input
+                type="tel"
+                name="Phone Number"
+                class="right-align input child1 inputs-radius"
+                placeholder="נייד"
+                dir="rtl"
+                required
+              />
+              <a class="input side-icons"
+                ><i class="fa-solid fa-phone child1" style="color: #c7c7c7"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="invitation-amount">
+            <h4>:כמות מוזמנים</h4>
+            <div class="input-group plus-minus-input values-box">
+              <div class="input-group-button">
+                <button
+                  type="button"
+                  class="button hollow circle minus-icon"
+                  data-quantity="minus"
+                  data-field="Amount Invited"
+                >
+                  <i
+                    class="fa-solid fa-circle-minus"
+                    style="color: white"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+              <input
+                class="numbers-input"
+                type="number"
+                name="Amount Invited"
+                value="1"
+                min="1"
+                max="15"
+              />
+              <div class="input-group-button">
+                <button
+                  type="button"
+                  class="button hollow plus plus-icon"
+                  data-quantity="plus"
+                  data-field="Amount Invited"
+                >
+                  <i
+                    class="fa-solid fa-circle-plus"
+                    style="color: white"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <br />
+            <button id="submitButton" type="submit" class="button-39 send-btn">
+              <span>שלח</span><i></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/3ce0a43678.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

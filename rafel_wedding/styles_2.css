@@ -1,0 +1,127 @@
+Reset some default browser styles body,
+h1,
+p,
+form,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Set the background image for sections */
+.header-image {
+  background-image: url("img/1.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.image-text {
+  background-image: url("img/2.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.image-form {
+  background-image: url("img/3.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+/* Style the container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style the form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header-image {
+    height: 50vh;
+  }
+}
+
+.right-align::placeholder {
+  text-align: right;
+}
+
+/* Hide the invitation-amount and the plus-minus-input by default */
+.invitation-amount {
+  display: none;
+}
+
+.plus-minus-input {
+  display: none;
+}
+
+.plus-minus-input .input-group-field {
+  text-align: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+}
+
+.plus-minus-input .input-group-field::-webkit-inner-spin-button,
+.plus-minus-input .input-group-field ::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.plus-minus-input .input-group-button .circle {
+  border-radius: 50%;
+  padding: 1em 1.3em;
+}
+
+.inline-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.inline-buttons .one-third {
+  text-align: center;
+  margin: 0 10px; /* Adjust the margin value as per your preference */
+}
+
+@media only screen and (max-width: 1076px) {
+  .inline-buttons .one-third {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+.inline-buttons button.selected {
+  background-color: #e2e2e2;
+  color: #000;
+}
